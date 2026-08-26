@@ -8,7 +8,7 @@ spring:
     url: jdbc:mysql://claimassist-mysql-claimassist-ai.h.aivencloud.com:27052/defaultdb?useSSL=true&requireSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: avnadmin
-    password: ${root123}
+    password: ${MYSQL_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
