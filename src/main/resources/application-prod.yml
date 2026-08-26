@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: claim-assist-backend
+  datasource:
+    url: jdbc:mysql://claimassist-mysql-claimassist-ai.h.aivencloud.com:27052/defaultdb?useSSL=true&requireSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: avnadmin
+    password: ${root123}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
